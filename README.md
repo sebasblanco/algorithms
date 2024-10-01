@@ -16,6 +16,8 @@ kMeans, kNN, and ANN classifiers for clustering
 
 NLP for sentiment analysis
 
+Random Forest to predict home prices
+
 ### Quantum Computing
 
 Bernstein-Vazirani algorithm to determine hidden string
