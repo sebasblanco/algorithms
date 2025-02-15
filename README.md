@@ -1,6 +1,6 @@
 # Algorithms
- ## Overview
- Welcome to my Algorithms repository! I have uploaded various algorithm implementations in Python and Jupyer Notebooks with the goal to provide clean, efficient, and well-documented code for learning, reference, and problem-solving.  
+## Overview
+ Welcome to my Algorithms repository! I have uploaded various algorithm implementations in Python and Jupyer Notebooks with the goal to provide clean, efficient, and well-documented code for reference and problem-solving.  
 
 ## Algorithms included
 
