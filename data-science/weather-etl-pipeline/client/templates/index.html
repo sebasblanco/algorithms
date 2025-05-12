@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/static/style.css" />
+</head>
+
+<body>
+  <div>
+    <h1>Real-time weather data by city</h1>
+    <form action="{{ url_for('home') }}" method="POST" class="lookup_form">
+      <fieldset>
+        <legend>City</legend>
+        <input type="text" name="City" />
+      </fieldset>
+      <br>
+      <input type="submit" value="submit" />
+    </form>
+  </div>
+
+  <div class="flash-messages">
+    {% if messages %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+  <div class="weather-info">
+    {% if weather %}
+    <h1>Weather Information</h1>
+        <h2>Location: {{ weather.location }}, {{ weather.region }}, {{ weather.country }}</h2>
+        <p>Local Time: {{ weather.local_time }}</p>
+        <p>Temperature (F): {{ weather.temp_f }}</p>
+        <p>Condition: {{ weather.condition }}</p>
+        <p>Wind Speed (MPH): {{ weather.wind_mph }}</p>
+        <p>Wind Direction: {{ weather.wind_dir }}</p>
+        <p>UV Index: {{ weather.uv }}</p>
+        <p>Moon Phase: {{ weather.moon_phase }}</p>
+    {% endif %}
+  </div>
+</body>
