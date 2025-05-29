@@ -11,8 +11,6 @@ Monte Carlo algorithm for simulations
 
 Linear and Quadratic regressions for comparisons
 
-ETL pipeline for real-time weather information
-
 ### Machine Learning
 kMeans, kNN, and ANN classifiers for clustering
 
